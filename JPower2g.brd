@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="25" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -14,7 +14,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -151,6 +151,14 @@
 <hole x="47" y="20" drill="3.2"/>
 <hole x="3" y="20" drill="3.2"/>
 <wire x1="1.27" y1="17" x2="31.75" y2="17" width="0.1524" layer="21"/>
+<wire x1="33.02" y1="16.75" x2="0" y2="16.75" width="0.0254" layer="46"/>
+<hole x="16.51" y="13.97" drill="0.6"/>
+<hole x="46.99" y="22.86" drill="0.6"/>
+<wire x1="15.24" y1="13.97" x2="17.78" y2="13.97" width="0.1524" layer="49"/>
+<wire x1="16.51" y1="15.24" x2="16.51" y2="12.7" width="0.1524" layer="49"/>
+<wire x1="45.72" y1="22.86" x2="46.99" y2="22.86" width="0.1524" layer="49"/>
+<wire x1="46.99" y1="22.86" x2="48.26" y2="22.86" width="0.1524" layer="49"/>
+<wire x1="46.99" y1="24.13" x2="46.99" y2="22.86" width="0.1524" layer="49"/>
 </plain>
 <libraries>
 <library name="jlab">
@@ -441,7 +449,7 @@ http://www.weartronics.com/</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules name="default *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -484,11 +492,11 @@ design rules under a new name.</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMinPadTop" value="20mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
 <param name="rlMinPadInner" value="10mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMinPadBottom" value="20mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
 <param name="rlMinViaOuter" value="8mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
@@ -498,8 +506,8 @@ design rules under a new name.</description>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
 <param name="rlMinMicroViaInner" value="4mil"/>
 <param name="rlMaxMicroViaInner" value="20mil"/>
-<param name="psTop" value="-1"/>
-<param name="psBottom" value="-1"/>
+<param name="psTop" value="1"/>
+<param name="psBottom" value="1"/>
 <param name="psFirst" value="-1"/>
 <param name="psElongationLong" value="100"/>
 <param name="psElongationOffset" value="100"/>
@@ -856,6 +864,18 @@ design rules under a new name.</description>
 <element name="JP67" library="pinhead" package="1X01" value="" x="40.64" y="29.21" smashed="yes">
 <attribute name="VALUE" x="39.37" y="26.035" size="1.27" layer="27"/>
 </element>
+<element name="JP68" library="pinhead" package="1X01" value="" x="1.27" y="40.64" smashed="yes">
+<attribute name="VALUE" x="0" y="37.465" size="1.27" layer="27"/>
+</element>
+<element name="JP69" library="pinhead" package="1X01" value="" x="1.27" y="35.56" smashed="yes">
+<attribute name="VALUE" x="0" y="32.385" size="1.27" layer="27"/>
+</element>
+<element name="JP70" library="pinhead" package="1X01" value="" x="1.27" y="30.48" smashed="yes">
+<attribute name="VALUE" x="0" y="27.305" size="1.27" layer="27"/>
+</element>
+<element name="JP71" library="pinhead" package="1X01" value="" x="1.27" y="25.4" smashed="yes">
+<attribute name="VALUE" x="0" y="22.225" size="1.27" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="S$1">
@@ -863,6 +883,7 @@ design rules under a new name.</description>
 <wire x1="2.54" y1="13.97" x2="9.525" y2="13.97" width="3.81" layer="1"/>
 <via x="2.54" y="8.255" extent="1-16" drill="2"/>
 <wire x1="9.525" y1="13.97" x2="2.54" y2="13.97" width="3.81" layer="16"/>
+<wire x1="2.54" y1="8.255" x2="2.54" y2="13.97" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="S$2">
 <via x="2.54" y="2.54" extent="1-16" drill="2"/>
@@ -872,6 +893,7 @@ design rules under a new name.</description>
 <signal name="S$3">
 <wire x1="2.54" y1="8.255" x2="24.13" y2="8.255" width="3.81" layer="16"/>
 <wire x1="24.13" y1="8.255" x2="2.54" y2="8.255" width="3.81" layer="1"/>
+<wire x1="24.13" y1="8.255" x2="24.13" y2="8.255" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="S$4">
 <via x="30.48" y="1.905" extent="1-16" drill="1.3"/>
