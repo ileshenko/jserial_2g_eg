@@ -1,0 +1,56 @@
+Partlist
+
+Exported from JSerial2g.sch at 7/23/14 4:36 PM
+
+EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
+
+Assembly variant: 
+
+Part     Value          Device           Package          Library             Sheet
+
+C1       0.1 uF         CAPACITOR_0805   CAPC2012X145AN   ipc-7351-capacitor  1
+C2       0.47 uF        CAPACITOR_0805   CAPC2012X145AN   ipc-7351-capacitor  1
+C3       10uF           POLARISED_A_CASE CAPMP3216X180N   ipc-7351-capacitor  1
+C4       100uF          CPOL-EUE2.5-6    E2,5-6           rcl                 1
+C5       0.47 uF        CAPACITOR_0805   CAPC2012X145AN   ipc-7351-capacitor  1
+C6       0.1uF          CAPACITOR_0805   CAPC2012X145AN   ipc-7351-capacitor  1
+C7       0.1uF          CAPACITOR_0805   CAPC2012X145AN   ipc-7351-capacitor  1
+C8       0.1uF          CAPACITOR_0805   CAPC2012X145AN   ipc-7351-capacitor  1
+C9       0.1uF          CAPACITOR_0805   CAPC2012X145AN   ipc-7351-capacitor  1
+CB0                     LED3MM           LED3MM           jlab                1
+CB1                     LED3MM           LED3MM           jlab                1
+CB3                     PINHD-1X1        1X01             pinhead             1
+CB4                     PINHD-1X1        1X01             pinhead             1
+CTS                     PINHD-1X1        1X01             pinhead             1
+D1       1N4148         DIODE_SOD-123    SOD3718X135N     ipc-7351-diode      1
+DSR                     PINHD-1X1        1X01             pinhead             1
+DTR                     PINHD-1X1        1X01             pinhead             1
+IC1      FT232RL        FT232RL          SSOP28           ftdichip            1
+IC2      MAX3232CSE     MAX3232CSE       SO16             maxim               1
+J1       DCJ0202        DCJ0202          DCJ0202          con-jack            1
+J2                      M09D             M09D             jlab                1
+J3       RJ45-8X        RJ45-8X          RJ45-NO-SHIELD   jlab                1
+J4       USBMOLEX       USBMOLEX         HW-MU-5F-20      jlab_connectors     1
+LED1                    LED3MM           LED3MM           jlab                1
+Q1       2N3904 SOT23   NPN_SOT-23       SOT95P280X135-3N ipc-7351-transistor 1
+Q5       BC857BSMD      BC857BSMD        SOT23-BEC        transistor-pnp      1
+Q6       BC857BSMD      BC857BSMD        SOT23-BEC        transistor-pnp      1
+Q8       BC857BSMD      BC857BSMD        SOT23-BEC        transistor-pnp      1
+Q9       2N3904         NPN_SOT-23       SOT95P280X135-3N ipc-7351-transistor 1
+R1       1K             RESISTOR_0805    RESC2012X70N     ipc-7351-resistor   1
+R2       1K             RESISTOR_0805    RESC2012X70N     ipc-7351-resistor   1
+R3       1K             RESISTOR_0805    RESC2012X70N     ipc-7351-resistor   1
+R4       1K             RESISTOR_0805    RESC2012X70N     ipc-7351-resistor   1
+R5       10K            RESISTOR_0805    RESC2012X70N     ipc-7351-resistor   1
+R6       4.7K           RESISTOR_0805    RESC2012X70N     ipc-7351-resistor   1
+R7       1K             RESISTOR_0805    RESC2012X70N     ipc-7351-resistor   1
+R8       10K            RESISTOR_0805    RESC2012X70N     ipc-7351-resistor   1
+R9       10K            RESISTOR_0805    RESC2012X70N     ipc-7351-resistor   1
+R10      1K             RESISTOR_0805    RESC2012X70N     ipc-7351-resistor   1
+R11      10K            RESISTOR_0805    RESC2012X70N     ipc-7351-resistor   1
+R12      1K             RESISTOR_0805    RESC2012X70N     ipc-7351-resistor   1
+R13      10K            RESISTOR_0805    RESC2012X70N     ipc-7351-resistor   1
+R14      1K             RESISTOR_0805    RESC2012X70N     ipc-7351-resistor   1
+R15      100            RESISTOR_0805    RESC2012X70N     ipc-7351-resistor   1
+RI                      PINHD-1X1        1X01             pinhead             1
+SP1                     KSS1201          KSS1201          buzzer              1
